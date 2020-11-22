@@ -1,2 +1,2 @@
 # Orbit-Share-Documentation
-Bachelor Project for Orbitlab, lient documentation.
+Bachelor Project for Orbitlab, client documentation.
