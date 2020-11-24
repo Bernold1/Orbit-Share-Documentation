@@ -97,14 +97,16 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="homecomponent.html#homeservice" class="tsd-kind-icon">home<wbr>Service</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="homecomponent.html#newestcontentarr" class="tsd-kind-icon">newest<wbr>Content<wbr>Arr</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="homecomponent.html#rating" class="tsd-kind-icon">rating</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="homecomponent.html#searchservice" class="tsd-kind-icon">search<wbr>Service</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="homecomponent.html#ngoninit" class="tsd-kind-icon">ng<wbr>OnInit</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="homecomponent.html#receivesearchcontent" class="tsd-kind-icon">receive<wbr>Search<wbr>Content</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="homecomponent.html#showallcollections" class="tsd-kind-icon">show<wbr>All<wbr>Collections</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="homecomponent.html#shownewestcontent" class="tsd-kind-icon">show<wbr>Newestcontent</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="homecomponent.html#shownewestcontent" class="tsd-kind-icon">show<wbr>Newest<wbr>Content</a></li>
 							</ul>
 						</section>
 					</div>
@@ -116,19 +118,22 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Home<wbr>Component<span class="tsd-signature-symbol">(</span>homeService<span class="tsd-signature-symbol">: </span><a href="homeservice.html" class="tsd-signature-type">HomeService</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="homecomponent.html" class="tsd-signature-type">HomeComponent</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Home<wbr>Component<span class="tsd-signature-symbol">(</span>homeService<span class="tsd-signature-symbol">: </span><a href="homeservice.html" class="tsd-signature-type">HomeService</a>, searchService<span class="tsd-signature-symbol">: </span><a href="searchservice.html" class="tsd-signature-type">SearchService</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="homecomponent.html" class="tsd-signature-type">HomeComponent</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/app/components/home/home.component.ts:25</li>
+									<li>Defined in src/app/components/home/home.component.ts:26</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>homeService: <a href="homeservice.html" class="tsd-signature-type">HomeService</a></h5>
+								</li>
+								<li>
+									<h5>searchService: <a href="searchservice.html" class="tsd-signature-type">SearchService</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="homecomponent.html" class="tsd-signature-type">HomeComponent</a></h4>
@@ -144,7 +149,7 @@
 					<div class="tsd-signature tsd-kind-icon">all<wbr>Collections<wbr>Arr<span class="tsd-signature-symbol">:</span> <a href="../interfaces/collectiondata.html" class="tsd-signature-type">CollectionData</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/app/components/home/home.component.ts:24</li>
+							<li>Defined in src/app/components/home/home.component.ts:25</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -159,7 +164,7 @@
 					<div class="tsd-signature tsd-kind-icon">home<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="homeservice.html" class="tsd-signature-type">HomeService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/app/components/home/home.component.ts:27</li>
+							<li>Defined in src/app/components/home/home.component.ts:29</li>
 						</ul>
 					</aside>
 				</section>
@@ -169,7 +174,7 @@
 					<div class="tsd-signature tsd-kind-icon">newest<wbr>Content<wbr>Arr<span class="tsd-signature-symbol">:</span> <a href="../interfaces/icontent.html" class="tsd-signature-type">IContent</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/app/components/home/home.component.ts:20</li>
+							<li>Defined in src/app/components/home/home.component.ts:21</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -184,7 +189,17 @@
 					<div class="tsd-signature tsd-kind-icon">rating<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 5</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/app/components/home/home.component.ts:25</li>
+							<li>Defined in src/app/components/home/home.component.ts:26</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="searchservice" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> search<wbr>Service</h3>
+					<div class="tsd-signature tsd-kind-icon">search<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="searchservice.html" class="tsd-signature-type">SearchService</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in src/app/components/home/home.component.ts:30</li>
 						</ul>
 					</aside>
 				</section>
@@ -201,12 +216,42 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/app/components/home/home.component.ts:32</li>
+									<li>Defined in src/app/components/home/home.component.ts:38</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Calls <code>showNewestcontent();</code> and <code>showAllCollections();</code>  to show all content and collections added to the DB.</p>
+									<p>Instantiates <code>showNewestContent()</code>, <code>showAllCollections()</code>
+										and <code>receiveSearchContent()</code>. This loads the contents and Collections viewed on the &quot;Home&quot; page upon creation.
+									When a search is completed the observable updates the content list.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="receivesearchcontent" class="tsd-anchor"></a>
+					<h3>receive<wbr>Search<wbr>Content</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">receive<wbr>Search<wbr>Content<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in src/app/components/home/home.component.ts:66</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p><code>recieveSearchContent()</code> is a function in the home.component. This function is
+										responsible for loading the search results. This function is used along with
+										the toolbar.component and the search.service. Here we subscribe to the results
+										emitted as an observable from the toolbar.component using the searc.service.
+										After recieving an update on the subscribed value, the results are loaded
+										into the newestContentArr which results in the view being updated. This happens
+									by overwriting the value newestContentArr which is used in the home.component template.</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -223,7 +268,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/app/components/home/home.component.ts:56</li>
+									<li>Defined in src/app/components/home/home.component.ts:79</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -239,15 +284,15 @@
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="shownewestcontent" class="tsd-anchor"></a>
-					<h3>show<wbr>Newestcontent</h3>
+					<h3>show<wbr>Newest<wbr>Content</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">show<wbr>Newestcontent<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">show<wbr>Newest<wbr>Content<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/app/components/home/home.component.ts:42</li>
+									<li>Defined in src/app/components/home/home.component.ts:49</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -293,14 +338,20 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="homecomponent.html#rating" class="tsd-kind-icon">rating</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="homecomponent.html#searchservice" class="tsd-kind-icon">search<wbr>Service</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="homecomponent.html#ngoninit" class="tsd-kind-icon">ng<wbr>OnInit</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="homecomponent.html#receivesearchcontent" class="tsd-kind-icon">receive<wbr>Search<wbr>Content</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="homecomponent.html#showallcollections" class="tsd-kind-icon">show<wbr>All<wbr>Collections</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="homecomponent.html#shownewestcontent" class="tsd-kind-icon">show<wbr>Newestcontent</a>
+								<a href="homecomponent.html#shownewestcontent" class="tsd-kind-icon">show<wbr>Newest<wbr>Content</a>
 							</li>
 						</ul>
 					</li>

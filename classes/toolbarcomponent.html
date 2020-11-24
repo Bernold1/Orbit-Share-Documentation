@@ -95,13 +95,26 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="toolbarcomponent.html#authservice" class="tsd-kind-icon">auth<wbr>Service</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="toolbarcomponent.html#currentuser" class="tsd-kind-icon">current<wbr>User</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="toolbarcomponent.html#fb" class="tsd-kind-icon">fb</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="toolbarcomponent.html#router" class="tsd-kind-icon">router</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="toolbarcomponent.html#searchcontentarr" class="tsd-kind-icon">search<wbr>Content<wbr>Arr</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="toolbarcomponent.html#searchform" class="tsd-kind-icon">search<wbr>Form</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="toolbarcomponent.html#searchservice" class="tsd-kind-icon">search<wbr>Service</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="toolbarcomponent.html#searchcriteria" class="tsd-kind-icon">search<wbr>Criteria</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="toolbarcomponent.html#entersubmit" class="tsd-kind-icon">enter<wbr>Submit</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="toolbarcomponent.html#logout" class="tsd-kind-icon">logout</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="toolbarcomponent.html#ngoninit" class="tsd-kind-icon">ng<wbr>OnInit</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="toolbarcomponent.html#searchcontent" class="tsd-kind-icon">search<wbr>Content</a></li>
 							</ul>
 						</section>
 					</div>
@@ -113,17 +126,26 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Toolbar<wbr>Component<span class="tsd-signature-symbol">(</span>authService<span class="tsd-signature-symbol">: </span><a href="authenticationservice.html" class="tsd-signature-type">AuthenticationService</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="toolbarcomponent.html" class="tsd-signature-type">ToolbarComponent</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Toolbar<wbr>Component<span class="tsd-signature-symbol">(</span>router<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Router</span>, fb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FormBuilder</span>, searchService<span class="tsd-signature-symbol">: </span><a href="searchservice.html" class="tsd-signature-type">SearchService</a>, authService<span class="tsd-signature-symbol">: </span><a href="authenticationservice.html" class="tsd-signature-type">AuthenticationService</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="toolbarcomponent.html" class="tsd-signature-type">ToolbarComponent</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/app/components/toolbar/toolbar.component.ts:10</li>
+									<li>Defined in src/app/components/toolbar/toolbar.component.ts:21</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
+								<li>
+									<h5>router: <span class="tsd-signature-type">Router</span></h5>
+								</li>
+								<li>
+									<h5>fb: <span class="tsd-signature-type">FormBuilder</span></h5>
+								</li>
+								<li>
+									<h5>searchService: <a href="searchservice.html" class="tsd-signature-type">SearchService</a></h5>
+								</li>
 								<li>
 									<h5>authService: <a href="authenticationservice.html" class="tsd-signature-type">AuthenticationService</a></h5>
 								</li>
@@ -141,7 +163,7 @@
 					<div class="tsd-signature tsd-kind-icon">auth<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="authenticationservice.html" class="tsd-signature-type">AuthenticationService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/app/components/toolbar/toolbar.component.ts:12</li>
+							<li>Defined in src/app/components/toolbar/toolbar.component.ts:27</li>
 						</ul>
 					</aside>
 				</section>
@@ -151,13 +173,121 @@
 					<div class="tsd-signature tsd-kind-icon">current<wbr>User<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = localStorage.getItem(&#x27;userId&#x27;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/app/components/toolbar/toolbar.component.ts:10</li>
+							<li>Defined in src/app/components/toolbar/toolbar.component.ts:19</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="fb" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> fb</h3>
+					<div class="tsd-signature tsd-kind-icon">fb<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">FormBuilder</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in src/app/components/toolbar/toolbar.component.ts:25</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="router" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> router</h3>
+					<div class="tsd-signature tsd-kind-icon">router<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Router</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in src/app/components/toolbar/toolbar.component.ts:24</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="searchcontentarr" class="tsd-anchor"></a>
+					<h3>search<wbr>Content<wbr>Arr</h3>
+					<div class="tsd-signature tsd-kind-icon">search<wbr>Content<wbr>Arr<span class="tsd-signature-symbol">:</span> <a href="../interfaces/icontent.html" class="tsd-signature-type">IContent</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in src/app/components/toolbar/toolbar.component.ts:21</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="searchform" class="tsd-anchor"></a>
+					<h3>search<wbr>Form</h3>
+					<div class="tsd-signature tsd-kind-icon">search<wbr>Form<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">FormGroup</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in src/app/components/toolbar/toolbar.component.ts:20</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="searchservice" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> search<wbr>Service</h3>
+					<div class="tsd-signature tsd-kind-icon">search<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="searchservice.html" class="tsd-signature-type">SearchService</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in src/app/components/toolbar/toolbar.component.ts:26</li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="searchcriteria" class="tsd-anchor"></a>
+					<h3>search<wbr>Criteria</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> searchCriteria<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AbstractControl</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in src/app/components/toolbar/toolbar.component.ts:40</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p><code>get searchCriteria()</code> is a simple getter. which retrieves the value inputted by the user
+									in the user input search field.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">AbstractControl</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="entersubmit" class="tsd-anchor"></a>
+					<h3>enter<wbr>Submit</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">enter<wbr>Submit<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in src/app/components/toolbar/toolbar.component.ts:53</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p><code>enterSubmit()</code> in the toolbar.component is the function responsible for receiving the user
+										input search criteria, from the toolbar search field. The function reacts to the user pressing
+										Enter upon having entered the requested search criteria. After fetching the user input, the
+										function then performs the search using the <code>searchContent()</code> taking the search criteria
+									as a parameter.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="logout" class="tsd-anchor"></a>
 					<h3>logout</h3>
@@ -168,12 +298,12 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/app/components/toolbar/toolbar.component.ts:18</li>
+									<li>Defined in src/app/components/toolbar/toolbar.component.ts:77</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>calls service which removes user authentication data from local storage.</p>
+									<p>calls a service function which removes user authentication data from local storage.</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -190,9 +320,39 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/app/components/toolbar/toolbar.component.ts:14</li>
+									<li>Defined in src/app/components/toolbar/toolbar.component.ts:34</li>
 								</ul>
 							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="searchcontent" class="tsd-anchor"></a>
+					<h3>search<wbr>Content</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">search<wbr>Content<span class="tsd-signature-symbol">(</span>searchInput<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in src/app/components/toolbar/toolbar.component.ts:65</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p><code>searchContent()</code> in the toolbar.component is responsible for calling the search query using the
+										search.service. Upon subscribing to the findContentBySearch, the result returned is updated.
+									This is also done using the search.service.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>searchInput: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -223,11 +383,35 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="toolbarcomponent.html#currentuser" class="tsd-kind-icon">current<wbr>User</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="toolbarcomponent.html#fb" class="tsd-kind-icon">fb</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="toolbarcomponent.html#router" class="tsd-kind-icon">router</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="toolbarcomponent.html#searchcontentarr" class="tsd-kind-icon">search<wbr>Content<wbr>Arr</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="toolbarcomponent.html#searchform" class="tsd-kind-icon">search<wbr>Form</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="toolbarcomponent.html#searchservice" class="tsd-kind-icon">search<wbr>Service</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="toolbarcomponent.html#searchcriteria" class="tsd-kind-icon">search<wbr>Criteria</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="toolbarcomponent.html#entersubmit" class="tsd-kind-icon">enter<wbr>Submit</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="toolbarcomponent.html#logout" class="tsd-kind-icon">logout</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="toolbarcomponent.html#ngoninit" class="tsd-kind-icon">ng<wbr>OnInit</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="toolbarcomponent.html#searchcontent" class="tsd-kind-icon">search<wbr>Content</a>
 							</li>
 						</ul>
 					</li>
