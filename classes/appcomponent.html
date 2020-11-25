@@ -66,6 +66,13 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Main component generated when creating an angular project. Contains functionality for hiding toolbar in specific locations.</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -120,7 +127,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/app/app.component.ts:19</li>
+									<li>Defined in src/app/app.component.ts:22</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -148,7 +155,7 @@
 					<div class="tsd-signature tsd-kind-icon">auth<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="authenticationservice.html" class="tsd-signature-type">AuthenticationService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/app/app.component.ts:23</li>
+							<li>Defined in src/app/app.component.ts:26</li>
 						</ul>
 					</aside>
 				</section>
@@ -158,7 +165,7 @@
 					<div class="tsd-signature tsd-kind-icon">hide<wbr>Toolbar$<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Observable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/app/app.component.ts:19</li>
+							<li>Defined in src/app/app.component.ts:22</li>
 						</ul>
 					</aside>
 				</section>
@@ -168,7 +175,7 @@
 					<div class="tsd-signature tsd-kind-icon">prof<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="profileservice.html" class="tsd-signature-type">ProfileService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/app/app.component.ts:24</li>
+							<li>Defined in src/app/app.component.ts:27</li>
 						</ul>
 					</aside>
 				</section>
@@ -178,7 +185,7 @@
 					<div class="tsd-signature tsd-kind-icon">router<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Router</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/app/app.component.ts:22</li>
+							<li>Defined in src/app/app.component.ts:25</li>
 						</ul>
 					</aside>
 				</section>
@@ -195,9 +202,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/app/app.component.ts:27</li>
+									<li>Defined in src/app/app.component.ts:35</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>An observable event for hiding the toolbar. Pipe starts with creating a new NavigationEnd,
+										which triggers the event when a navigation ends successfully. Here if the any of the paths mapped are routed to
+									the toolbar will be hidden. These are all routes which do not need authentication to view.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
