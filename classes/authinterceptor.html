@@ -117,7 +117,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/app/modules/authentication/auth-config.interceptor.ts:14</li>
+									<li>Defined in src/app/modules/authentication/auth-config.interceptor.ts:13</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -139,7 +139,7 @@
 					<div class="tsd-signature tsd-kind-icon">auth<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="authenticationservice.html" class="tsd-signature-type">AuthenticationService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/app/modules/authentication/auth-config.interceptor.ts:15</li>
+							<li>Defined in src/app/modules/authentication/auth-config.interceptor.ts:14</li>
 						</ul>
 					</aside>
 				</section>
@@ -156,9 +156,17 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/app/modules/authentication/auth-config.interceptor.ts:17</li>
+									<li>Defined in src/app/modules/authentication/auth-config.interceptor.ts:22</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p><code>intercept()</code> is a somewhat generic part of the auth-config.component. This function is based on the Intercepter provided to us by Angular.
+										It&#39;s responsible for making the clone on every query request sent to the backend. Here we attach an authorization header to the request.
+										Using our Jwt Token with this request we can check for a users authorization in our backend. This involves checking the decoded token
+									using our token secret in the backend. For reference this is used as a middleware along with the authorization-checkpoint.ts on the backend.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>

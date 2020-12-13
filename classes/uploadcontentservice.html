@@ -84,10 +84,9 @@
 								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="uploadcontentservice.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section ">
+						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="uploadcontentservice.html#api_url" class="tsd-kind-icon">API_<wbr>URL</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="uploadcontentservice.html#errorhandlerservice" class="tsd-kind-icon">errorhandler<wbr>Service</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="uploadcontentservice.html#http" class="tsd-kind-icon">http</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="uploadcontentservice.html#viewcontentservice" class="tsd-kind-icon">view<wbr>Content<wbr>Service</a></li>
@@ -121,7 +120,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/app/services/upload-content/upload-content.service.ts:29</li>
+									<li>Defined in src/app/services/upload-content/upload-content.service.ts:31</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -141,25 +140,15 @@
 					</ul>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
+			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="api_url" class="tsd-anchor"></a>
-					<h3>API_<wbr>URL</h3>
-					<div class="tsd-signature tsd-kind-icon">API_<wbr>URL<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;http://localhost:3000/content&quot;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in src/app/services/upload-content/upload-content.service.ts:28</li>
-						</ul>
-					</aside>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="errorhandlerservice" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> errorhandler<wbr>Service</h3>
 					<div class="tsd-signature tsd-kind-icon">errorhandler<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="errorhandlerservice.html" class="tsd-signature-type">ErrorhandlerService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/app/services/upload-content/upload-content.service.ts:33</li>
+							<li>Defined in src/app/services/upload-content/upload-content.service.ts:35</li>
 						</ul>
 					</aside>
 				</section>
@@ -169,7 +158,7 @@
 					<div class="tsd-signature tsd-kind-icon">http<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HttpClient</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/app/services/upload-content/upload-content.service.ts:32</li>
+							<li>Defined in src/app/services/upload-content/upload-content.service.ts:34</li>
 						</ul>
 					</aside>
 				</section>
@@ -179,7 +168,7 @@
 					<div class="tsd-signature tsd-kind-icon">view<wbr>Content<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="viewcontentservice.html" class="tsd-signature-type">ViewContentService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/app/services/upload-content/upload-content.service.ts:34</li>
+							<li>Defined in src/app/services/upload-content/upload-content.service.ts:36</li>
 						</ul>
 					</aside>
 				</section>
@@ -196,9 +185,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/app/services/upload-content/upload-content.service.ts:37</li>
+									<li>Defined in src/app/services/upload-content/upload-content.service.ts:43</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Take values from form group and appends the values to HTTP parameters. The file uploaded is stored inot the request body.
+									After storing the form values into the request, the API is consumed via a <code>HTTP GET</code> request to create the created content.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -221,7 +216,7 @@
 					<div class="tsd-signature tsd-kind-icon">contentID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/app/services/upload-content/upload-content.service.ts:29</li>
+							<li>Defined in src/app/services/upload-content/upload-content.service.ts:31</li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -230,7 +225,7 @@
 						<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/app/services/upload-content/upload-content.service.ts:29</li>
+								<li>Defined in src/app/services/upload-content/upload-content.service.ts:31</li>
 							</ul>
 						</aside>
 					</section>
@@ -241,7 +236,7 @@
 					<div class="tsd-signature tsd-kind-icon">http<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in src/app/services/upload-content/upload-content.service.ts:69</li>
+							<li>Defined in src/app/services/upload-content/upload-content.service.ts:76</li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -250,7 +245,7 @@
 						<div class="tsd-signature tsd-kind-icon">headers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HttpHeaders</span><span class="tsd-signature-symbol"> = new HttpHeaders({&#x27;Content-Type&#x27;: &#x27;application/json&#x27;,Authorization: &#x27;my-auth-token&#x27;,})</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/app/services/upload-content/upload-content.service.ts:70</li>
+								<li>Defined in src/app/services/upload-content/upload-content.service.ts:77</li>
 							</ul>
 						</aside>
 					</section>
@@ -274,9 +269,6 @@
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
 								<a href="uploadcontentservice.html#constructor" class="tsd-kind-icon">constructor</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="uploadcontentservice.html#api_url" class="tsd-kind-icon">API_<wbr>URL</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="uploadcontentservice.html#errorhandlerservice" class="tsd-kind-icon">errorhandler<wbr>Service</a>

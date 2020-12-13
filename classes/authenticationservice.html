@@ -244,9 +244,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/app/services/authentication/authentication.service.ts:112</li>
+									<li>Defined in src/app/services/authentication/authentication.service.ts:126</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p><code>autoAuthenticate()</code> is a part of the authentication.service. This is responsible for recognizing a returning user.
+									The process of thought was to check for authData already existing. And then check to see if the token had expired.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -261,9 +267,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/app/services/authentication/authentication.service.ts:164</li>
+									<li>Defined in src/app/services/authentication/authentication.service.ts:198</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p><code>clearAuthData()</code> is a part of the authentication.service. This is responsible for clearing our token information.
+										This is done using the browsersupported localstorage. The token, expiration and userId we set earlier, we now
+									want to clear out. This is done using removeItem. Which removed the stored known key-value pair, through the key.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -278,9 +291,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/app/services/authentication/authentication.service.ts:133</li>
+									<li>Defined in src/app/services/authentication/authentication.service.ts:149</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p><code>createUser()</code> is a part of the authentication.service. This is responsible for creating user upoin registration.
+									This function is passed the registerForm filled by a registrering user in the database.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -301,9 +320,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/app/services/authentication/authentication.service.ts:171</li>
+									<li>Defined in src/app/services/authentication/authentication.service.ts:210</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p><code>getAuthData()</code> is a part of the authentication.service. This is responsible for getting the information stored
+									in the localStorage supported by the browser. The stored value is recieved through the key.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>tokenExpiration<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">; </span>userId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h4>
 							<ul class="tsd-parameters">
 								<li class="tsd-parameter">
@@ -397,9 +422,18 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/app/services/authentication/authentication.service.ts:57</li>
+									<li>Defined in src/app/services/authentication/authentication.service.ts:64</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p><code>login(loginForm)</code> is a part of the authentication.service. It&#39;s responsability is taking the
+										input from the login form filled by a user and requesting a login post request on the server.
+										The login request also configures the jtw token for the user and handles the expiration for
+										the current session. The function ends calling <code>saveAuthData()</code>
+									this saves the token, its&#39; expiration and the userId.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -420,9 +454,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/app/services/authentication/authentication.service.ts:99</li>
+									<li>Defined in src/app/services/authentication/authentication.service.ts:109</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p><code>logout()</code> is a part of the authentication.service. This is responsible for logging the user out.
+										Thereby removing their credidentials and clearing the user specific data. Upon logging out
+									the user is routed to / - which is defined as the welcome page.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -437,9 +478,17 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/app/services/authentication/authentication.service.ts:157</li>
+									<li>Defined in src/app/services/authentication/authentication.service.ts:185</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p><code>saveAuthData()</code> is a part of the authentication.service. This is responsible for saving our token.
+										This is done using the browsersupported localstorage. We set the token, the expiration and userId.
+										The setItem works as a key-value pair setter. Also for the format of the expiration the ISOstring
+									format is a serialized standardized way of viewing the date format.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -466,9 +515,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in src/app/services/authentication/authentication.service.ts:145</li>
+									<li>Defined in src/app/services/authentication/authentication.service.ts:164</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p><code>autoAuthenticate()</code> is a part of the authentication.service. This is responsible for recognizing a returning user.
+									The process of thought was to check for authData already existing. And then check to see if the token had expired.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
